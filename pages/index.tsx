@@ -3,7 +3,7 @@ import {Fragment} from "react";
 import FeaturePosts from '../components/home-page/featureposts'
 import {getFeaturePost} from '../lib/posts-utils'
 // @ts-ignore
-export default function HomePage(props: { posts: any; }) {
+export default function HomePage(props) {
   // @ts-ignore
   return (
       <Fragment>

@@ -1,13 +1,14 @@
 import Link from "next/link";
 function PostItems(props){
-    const { title, expert, date, id, isFeatured} = props.post;
+    const { title, expert, date, slug} = props.post;
 
     const formattedDate = new Date(date).toLocaleDateString('en-US',{
         date:'numeric',
         month:'long',
         year:'numeric',
         });
-    const exploreLink = `/posts/${id}`;
+    const exploreLink = `/posts/${slug}`;
+
     return <li className='col-span-2 rounded-lg  shadow group group-hover:rounded-full  bg-zinc-800 hover:bg-zinc-600'>
         <Link href={exploreLink} legacyBehavior>
             <a className='flex flex-col items-center max-w-2xl rounded-full '>

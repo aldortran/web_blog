@@ -1,7 +1,6 @@
-
 export default function PostHeader(props){
-    const {title, expert, id} = props;
-    const exploreLink = `/posts/${id}`;
+    const {title, expert, slug} = props;
+    const exploreLink = `/posts/${slug}`;
     return(
         <header className='flex flex-col bg-zinc-800 max-w-5xl px-8 md:mx-auto sm:text-5xl '>
             <div className='mx-auto max-w-2xl mt-4 justify-center'>
