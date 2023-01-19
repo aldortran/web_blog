@@ -1,0 +1,7 @@
+.article{
+    @apply border-x border-zinc-100 max-w-7xl bg-zinc-800 py-8 mx-auto p-5
+}
+
+.article p{
+    @apply m-1 p-4 text-zinc-300 max-w-2xl justify-center mx-auto text-xl
+}

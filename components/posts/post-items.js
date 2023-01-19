@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/legacy/image";
 function PostItems(props){
     const { title, expert, date, slug, image} = props.post;
 
@@ -14,7 +14,7 @@ function PostItems(props){
         <Link href={exploreLink} legacyBehavior>
             <a className='flex flex-col items-center max-w-2xl rounded-full '>
                 <div>
-                    <Image src={imgPath} alt={title} width={300} height={200}  className='w-full max-h-full h-full'/>
+                    <Image src={imgPath} alt={title} width={300} height={200}  layout='responsive' className='w-full max-h-full h-full'/>
                 </div>
                 <div className='justify-center flex flex-col m-8'>
                     <time className='text-zinc-400 text-sm px-4 flex'>

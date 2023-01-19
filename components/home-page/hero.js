@@ -1,12 +1,12 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export default function Hero(){
     return(
         <section className='flex flex-col h-full bg-black'>
             <div className='flex text-white bg-zinc-800 px-12 mx-auto w-full max-w-7xl py-8 border-x border-zinc-100'>
                     <div className='relative mt-6 px-8'>
-                        <div className='pointer-events-auto'>
-                            <Image aria-label='Levi' src='/images/tin.jpg' alt='Levi' width='300' height='300' className='w-16 h-16 rounded-full object-cover cursor-pointer' />
+                        <div className='pointer-events-auto w-16 h-16'>
+                            <Image aria-label='Levi' src='/images/tin.jpg' alt='Levi' width='300' height='300' className='rounded-full object-cover cursor-pointer' />
                         </div>
                         <h1 className='text-4xl font-bold max-w-2xl mt-6'>
                             Software engineer, and playing all musical instrument .
