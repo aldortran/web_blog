@@ -18,9 +18,9 @@ export function getStaticProps(context: { params: any; }){
 
 export function getStaticPaths(){
     const postFilenames = getPostFiles();
-    const slugs = postFilenames.map(fileName => fileName.replace(/\.md$/, '') );
+    const slugs = postFilenames.map(fileName => fileName.replace(/\.md$/, ''));
     return {
-        paths: slugs.map((slug) => ({ params: { slug: slug } })),
+        paths: slugs.map((slug) => ({ params:  { slug: slug } })),
         fallback: true,
     }
 }
