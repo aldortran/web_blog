@@ -1,0 +1,9 @@
+.form {
+    @apply space-y-8 max-w-2xl mx-auto
+}
+.form label{
+    @apply block mb-2 text-sm font-medium text-gray-500 dark:text-gray-200
+}
+
+
+

@@ -3,5 +3,13 @@
 }
 
 .article p{
-    @apply m-1 p-4 text-zinc-300 max-w-2xl justify-center mx-auto text-xl
+    @apply m-1 p-4 text-zinc-100 max-w-2xl justify-center mx-auto text-xl
+}
+
+.article pre{
+    @apply text-gray-800 mx-auto max-w-2xl m-1 p-4
+}
+
+.article img{
+    @apply object-cover h-96 w-96 max-w-full mx-auto
 }

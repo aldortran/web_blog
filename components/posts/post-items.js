@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/legacy/image";
 function PostItems(props){
-    const { title, expert, date, slug, image} = props.post;
+    const { title, expert, date, slug} = props.post;
 
     const formattedDate = new Date(date).toLocaleDateString('en-US',{
         date:'numeric',
@@ -9,13 +9,10 @@ function PostItems(props){
         year:'numeric',
         });
     const exploreLink = `/posts/${slug}`;
-    const imgPath = `/images/posts/${slug}/${image}`;
-    return <li className='col-span-2 rounded-lg shadow group group-hover:rounded-full  bg-zinc-800 hover:bg-zinc-600'>
+
+    return <li className='col-span-2 rounded-lg shadow group group-hover:rounded-full bg-zinc-800 hover:bg-zinc-600'>
         <Link href={exploreLink} legacyBehavior>
-            <a className='flex flex-col items-center max-w-2xl rounded-full '>
-                <div>
-                    <Image src={imgPath} alt={title} width={300} height={200}  layout='responsive' className='w-full max-h-full h-full'/>
-                </div>
+            <a className='flex flex-row items-center max-w-2xl rounded-full '>
                 <div className='justify-center flex flex-col m-8'>
                     <time className='text-zinc-400 text-sm px-4 flex'>
                         <span className='absolute bg-red-500 inset-x--2 '></span> <h4>{formattedDate}</h4>

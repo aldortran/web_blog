@@ -12,7 +12,7 @@ export default function Hero(){
                             Software engineer, and playing all musical instrument .
                         </h1>
                         <p className='text-base mt-6 max-w-2xl font-thin text-zinc-400'>
-                            I’m Levi, I’m Junior SoftWare Engineer at VanLang University.
+                            I’m Levi, I’m Junior SoftWare Engineer at VanLang University, This is a blog
                         </p>
                         <div className='flex mt-6 gap-6'>
                             <a className="group -m-1 p-1" aria-label="Follow on Github" href="https://github.com/TranTrungTinLV" target='_blank' rel="noreferrer">
